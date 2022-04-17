@@ -1,0 +1,35 @@
+
+// Welcome to the DNA Profiling Application.
+// Enter command or # to exit: load_db small.txt
+// Loading database...
+// Enter command or # to exit: load_dna 1.txt
+// Loading DNA...
+// Enter command or # to exit: process
+// Processing DNA...
+// Enter command or # to exit: search
+// Searching database...
+// Found in database!  DNA matches: Bob
+// Enter command or # to exit: #
+// *********************************************************
+// ourvector<i> stats:
+//  # of vectors created:   2
+//  # of elements inserted: 8
+//  # of elements accessed: 8
+// *********************************************************
+// *********************************************************
+// ourvector<c> stats:
+//  # of vectors created:   29
+//  # of elements inserted: 540
+//  # of elements accessed: 2496
+// *********************************************************
+// *********************************************************
+// ourvector<9ourvectorIcE> stats:
+//  # of vectors created:   4
+//  # of elements inserted: 14
+//  # of elements accessed: 2400
+// *********************************************************
+
+// In the beginning of the code, one of the fields in the structs I made was the ourvector<int> strCount, which held the number of STR's present in the DNA strand.
+// Because it was a small txt file I used, there was 4 str values included. There are 2 ourvectors<int> for strCount because when I sent the struct to the display, I only sent it as a struct and not a refernce paramter.
+// There are 29 ourvector<char>.In the beginning of the code, I made the sturct have an ourvector<char> DNA to hold the DNA strand, and 2 nested ourvector chars, one to hold the database and the other to hold the model (names of the str). When I was working on load_db, I was formatting the ourvector<ourvector<char>> database and model. For model, I would make different ourvectors and then push back those ourvectors into the ourvector< ourvector< char>> model. I did the same thing for the ourvector<ourvector<char>> databse. I took each line of the file and formatted that into an ourvector<char> then pushed that back into the database <ourvector<ourvector>>. I also made an ourvector<char> DNA which held the dna strand from the #.txt. That had to hold a lot of elements and thus was very long.
+// This goes in with my final ourvector analysis for the nested ourvector. As stated above, my struct had 2 nested ourvectors.Therefore, when makformatting these nested ourvectors, they were created to fit the struct.
